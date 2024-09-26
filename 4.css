@@ -1,0 +1,45 @@
+.imgpre {
+  width: 20px;
+  height: 20px;
+  margin-right: 2vw;
+  text-align: justify;
+}
+td {
+  color: rgb(0, 0, 0);
+}
+
+.box-def {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+.selection4 {
+}
+.win {
+  background: none;
+}
+.box-def > div {
+  max-width: 300px;
+  height: auto;
+  float: left;
+  background: linear-gradient(to right, #d8d5c7, #f2f2f2, #dbdbdb, #eaeaea);
+  border-radius: 15px;
+  margin: 1%;
+  margin-left: 2%;
+}
+
+.clearfix {
+  clear: both;
+  margin-bottom: 40px;
+}
+
+h2 {
+  color: black;
+  font-size: min(7vw, 20px);
+
+  line-height: min(6vw, 20px);
+}
+p2 {
+  color: black;
+  font-size: min(6vw, 18px);
+}

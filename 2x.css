@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
+
+@keyframes anim {
+  0% {
+    background: url(001.jpg);
+  }
+  50% {
+    background: url(002.jpg);
+  }
+  0% {
+    background: url(001.jpg);
+  }
+}
+.open-popup:hover {
+  color: #ffc744;
+  filter: blur(1px);
+  transform: scale(1.05, 1.05);
+}
+
+.logo2 {
+  object-fit: cover;
+  border-radius: 45%;
+  box-shadow: 4px 4px 10px #2f2307;
+}
+.logo2:hover {
+  object-fit: cover;
+  border-radius: 45%;
+  box-shadow: 4px 4px 10px #2f2307;
+  filter: grayscale(10%);
+  transform: scale(1.2, 1.2);
+}
+.container1 {
+  max-width: 1200px;
+  margin: auto;
+  font-size: 110%;
+}
+@keyframes scrolling-header {
+  to {
+    height: 20px;
+    box-shadow: 0 2px 2px rgd(0 0 0/0.5);
+  }
+}
+.menu {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 35px;
+}
+
+.menu_inner {
+  margin: 25px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  animation-name: scrolling-header;
+  animation-fill-mode: both;
+  animation-timeline: scroll();
+  animation-range: 50px 200px;
+}
+
+.nav {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.nav li a {
+  color: #999;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px 9px;
+  text-transform: uppercase;
+}
+.df {
+  color: #999;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px 9px;
+  text-transform: uppercase;
+}
+
+.df:hover {
+  background-color: none;
+  color: #ffc744;
+  border-radius: 5px;
+  filter: blur(2px);
+  transform: scale(1.2, 1.2);
+}
+
+.nav li a:hover {
+  background-color: none;
+  color: #ffc744;
+  border-radius: 5px;
+  filter: blur(2px);
+  transform: scale(1.2, 1.2);
+}
+
+.nav ul {
+  display: none;
+  position: absolute;
+  list-style: none;
+}
+
+ul.sub-menu-active {
+  display: block;
+}
